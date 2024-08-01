@@ -1,6 +1,6 @@
 # 📄 ExtractPDFPages
 
-Um utilitário simples para extrair páginas de arquivos PDF usando Python e Tkinter.
+Um utilitário simples para extrair páginas de arquivos PDF usando Python e Tkinter, especificamente para boletos do Banco Caixa.
 
 ## Como Usar 🚀
 
@@ -14,14 +14,24 @@ Um utilitário simples para extrair páginas de arquivos PDF usando Python e Tki
    - Execute o programa: `python main.py`
 
 3. **Interface Gráfica:**
-   - Selecione a pasta de origem, insira as páginas desejadas e escolha o destino.
-   - Clique no botão "Extrair Páginas" para iniciar o processo.
+   - Selecione a pasta com os boletos PDF.
+   - Insira o número da parcela desejada.
+   - Selecione a pasta de destino.
+   - Clique no botão "Extrair parcela" para iniciar o processo.
 
 ## Requisitos 🛠️
 
 - Python 3.x
 - PyPDF2
 - Tkinter
+
+## Funcionalidades
+
+- Extrai páginas de arquivos PDF contendo uma determinada parcela de um boleto do Banco Caixa.
+- Busca pelo padrão "RECBTO\. PAR \[número da parcela]/\[total de parcelas]" para identificar a parcela correta.
+- Permite selecionar a pasta de origem, a parcela desejada e a pasta de destino.
+- Desabilita o botão "Extrair parcela" até que todas as opções necessárias sejam selecionadas.
+- Exibe mensagens de status para informar o usuário sobre o progresso da extração.
 
 ## Contribuição 🤝
 
